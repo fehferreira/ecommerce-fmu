@@ -19,7 +19,8 @@
   "homepage": "https://github.com/fehferreira/ecommerce-fmu#readme",
   "dependencies": {
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
