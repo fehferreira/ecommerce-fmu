@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppStyled, GlobalStyled } from './styles';
 
-const App = () => (
+const App : React.FC = () => (
     <>
         <GlobalStyled />
         <AppStyled>
