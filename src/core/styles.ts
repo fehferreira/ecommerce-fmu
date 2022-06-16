@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyled = createGlobalStyle`
     html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, and, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea, select {
-        background-color: #f5f5f5;
+        background-color: transparent;
         border:0;
         font-size:100%;
         margin:0;
@@ -55,6 +55,9 @@ export const GlobalStyled = createGlobalStyle`
 
 
 export const AppStyled = styled.div`
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
 `;
 
 export const ContainerStyled = styled.div`

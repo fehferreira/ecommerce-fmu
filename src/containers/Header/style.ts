@@ -8,6 +8,9 @@ export const HeaderStyled = styled.div`
     align-items: center;
     padding-left: 16px;
     padding-right: 16px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 27px;
 `;
 
 export const LogoHeader = styled.div`
@@ -26,20 +29,14 @@ export const SubMenu = styled.div`
 
 export const LinkSell = styled.a`
     color: #5a5b6a;
-    font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 27px;
     text-decoration: none;
-
     padding: 6px 16px;
 `;
 
 export const LinkRegister = styled.a`
     color: #5a5b6a;
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 27px;
     text-decoration: none;
-
     padding: 6px 16px;
 `;

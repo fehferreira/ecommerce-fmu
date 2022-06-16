@@ -1,5 +1,6 @@
 import React from 'react';
 import { HeaderStyled, LinkSell, LinkRegister, LogoHeader, SubMenu } from './style';
+import SearchBar from '../../components/SearchBar';
 import logo from '../../assets/images/logoImage.png';
 
 const Header: React.FC = () => (
@@ -11,6 +12,7 @@ const Header: React.FC = () => (
       <LinkSell href='/#'>Sell on Shopka</LinkSell>
       <LinkRegister href='/#'>Register</LinkRegister>
     </SubMenu>
+    <SearchBar />
   </HeaderStyled>
 );
 
