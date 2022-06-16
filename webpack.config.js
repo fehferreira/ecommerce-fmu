@@ -15,7 +15,7 @@ module.exports = {
     hot: true,
   },
   resolve: {
-    extensions: [ '.tsx', '.ts', '.js' ],
+    extensions: ['.tsx', '.ts', '.js'],
   },
   module: {
     rules: [
@@ -35,8 +35,14 @@ module.exports = {
       {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
-        loader: 'ts-loader'
-      }
+        loader: 'ts-loader',
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: {
+          loader: 'file-loader',
+        },
+      },
     ],
   },
   plugins: [
