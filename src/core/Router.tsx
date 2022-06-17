@@ -9,7 +9,6 @@ const Router: React.FC = () => (
     <Header />
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
       </Routes>
     </BrowserRouter>
   </ContainerStyled>

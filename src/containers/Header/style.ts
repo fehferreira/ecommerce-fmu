@@ -10,7 +10,7 @@ export const HeaderStyled = styled.div`
     padding-right: 16px;
 
     font-family: 'Inter', sans-serif;
-    font-size: 27px;
+    font-size: 20px;
 `;
 
 export const LogoHeader = styled.div`
@@ -21,21 +21,30 @@ export const LogoHeader = styled.div`
     justify-content: center;
 `;
 
-export const SubMenu = styled.div`
+export const SubMenu = styled.div<{width?: number}>`
+    width: ${props => props.width ? `${props.width}px` : `auto`};
     display: flex;
     justify-content: center;
     align-items: center;
 `;
 
-export const LinkSell = styled.a`
+export const DefaultLink = styled.a`
     color: #5a5b6a;
-    font-weight: 500;
     text-decoration: none;
     padding: 6px 16px;
+    white-space: nowrap;
 `;
 
-export const LinkRegister = styled.a`
-    color: #5a5b6a;
+export const LinkSell = styled(DefaultLink)`
+    font-weight: 500;
+`;
+
+export const LinkRegister = styled(DefaultLink)`
+    font-weight: 400;
+`;
+
+export const LinkEletronics = styled.a`
+    color: #2264d1;
     font-weight: 400;
     text-decoration: none;
     padding: 6px 16px;
