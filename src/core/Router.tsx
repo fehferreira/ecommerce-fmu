@@ -1,17 +1,21 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes } from 'react-router-dom';
 import { ContainerStyled } from './styles';
 import Header from '../containers/Header';
-import Home from '../page/Home';
+import NavBar from '../containers/NavBar';
 
-const Router: React.FC = () => (
-  <ContainerStyled>
-    <Header />
-    <BrowserRouter>
-      <Routes>
-      </Routes>
-    </BrowserRouter>
-  </ContainerStyled>
-);
+const Router: React.FC = () => {
+
+  return(
+    <ContainerStyled>
+      <Header />
+      <NavBar tabActive={1} />
+      <BrowserRouter>
+        <Routes>
+        </Routes>
+      </BrowserRouter>
+    </ContainerStyled>
+  )
+};
 
 export default Router;
